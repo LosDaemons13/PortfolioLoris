@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
@@ -19,15 +19,22 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: ${{ secrets.FTP_REMOTE_ROOT }}
-          protocol: ftps
+          protocol: ftp
           exclude: |
-            **/.git*
-            **/.git/**
-            **/.github/**
-            **/.vscode/**
-            **/node_modules/**
-            **/.DS_Store
-            **/.env*
-            **/deploy.js
-            **/package.json
-            **/package-lock.json
+           **/.git*
+           **/.git/**
+           **/.github/**
+           **/.vscode/**
+           **/node_modules/**
+           **/.DS_Store
+           **/.env*
+           **/deploy.js
+           **/package.json
+           **/package-lock.json
+           **/logs/**
+           **/*.log*
+           **/*.gz
+           **/last_traffic
+           **/info.php5
+           **/info.pl
+           **/info.py
