@@ -86,7 +86,7 @@
                         véhiculé pour le moment.<br>Disponible dès maintenant.</p>
                     <div class="about__info">
                         <div class="about__card">
-                            <span class="about__info-title">4 ans</span>
+                            <span class="about__info-title">6 ans</span>
                             <span class="about__info-name">d'experience professionnelle</span>
                         </div>
                         <div class="about__card">
